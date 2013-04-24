@@ -1,0 +1,10 @@
+# ignore paths
+
+*.sw[aopnm]
+*~
+*.~lock*
+*.orig
+*.rej
+
+!.gitignore
+
