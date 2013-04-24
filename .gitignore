@@ -5,6 +5,14 @@
 *.~lock*
 *.orig
 *.rej
+*.DS_Store
+app/config/*.ini
+app/config/parameters.yml
+app/config/local.yml
 
 !.gitignore
+!.gitkeep
 
+web/bundles/*
+web/compiled
+vendor

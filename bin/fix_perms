@@ -1,0 +1,11 @@
+#!/bin/bash
+
+GRP=$1
+if [  -z "$GRP" ];
+then
+   echo Set valid group ...exiting 
+   exit ; 
+fi;
+
+chgrp $GRP  -R  app/{var,logs,cache}
+chmod g+ws -R  app/{var,logs,cache}

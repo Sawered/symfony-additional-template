@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#DIR=$(pwd)
+DIR=$DIR$(dirname "$0")"/.."
+DIR=$(realpath "$DIR")
+#echo $DIR
+
+find  $DIR/src -iname '*.less' -print0 |xargs -0 -n1 -t  lessc > /dev/null

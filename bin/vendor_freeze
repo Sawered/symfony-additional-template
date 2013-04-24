@@ -1,0 +1,4 @@
+#!/bin/bash
+
+tar cfj ./etc/packages/vendor.tbz2 vendor
+git add ./etc/packages/vendor.tbz2

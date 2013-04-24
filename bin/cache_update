@@ -1,0 +1,11 @@
+#!/bin/bash
+
+env=$1;
+if [ -z "$env" ];
+then env="prod";
+fi;
+#echo $env;
+
+app/console cache:clear --env=$env
+ln -sTf ../app/var/assetic/compiled web/compiled
+app/console assetic:dump app/var/assetic --env=$env
